@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Zhanadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Zhanadi's Website</h1><nav aria-label="Main menu"><a href="index.html" >Home</a><a href="about.html" >About</a><a href="projects.html" aria-current="page">Projects</a></nav></header>
+  <main><h2>My Course Projects</h2>
+<section><h3>1. Excel assignment: City Comparison</h3><p>I used a table to compare values for different cities. The question was: <strong>Which city has the highest total?</strong></p>
+<table><thead><tr><th>City</th><th>Value in practice table</th></tr></thead><tbody><tr><td>Almaty</td><td>44,954,500</td></tr><tr><td>Astana</td><td>28,219,400</td></tr><tr><td>Shymkent</td><td>13,933,000</td></tr><tr><td>Aktau</td><td>3,789,600</td></tr></tbody></table>
+<p>Almaty</p><div class="bar"><div class="fill" style="width:100%"></div></div>
+<p>Astana</p><div class="bar"><div class="fill" style="width:62.8%"></div></div>
+<p>Shymkent</p><div class="bar"><div class="fill" style="width:31%"></div></div>
+<p>Aktau</p><div class="bar"><div class="fill" style="width:8.4%"></div></div>
+<p class="notice">Check these example figures against your own submitted Excel assignment before the final website deadline.</p></section>
+<section><h3>2. SQL classwork: Query 4</h3><p>In this classwork, I practiced comparing grouped results. The question was: <strong>How can SQL help compare totals by city?</strong></p>
+<pre><code>-- Example only: replace with your actual Query 4
+SELECT City, SUM(Amount) AS Total
+FROM Orders
+GROUP BY City
+ORDER BY Total DESC;</code></pre>
+<p class="notice">Before final submission, replace this example with a screenshot or result table from your own Query 4 classwork.</p></section></main>
+  <footer>Course website project · 2026</footer>
+</body>
+</html>
